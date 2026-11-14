@@ -1,15 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Rn ads 
-</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
 
 
 <!-- Meta Pixel Code -->
@@ -31,195 +22,226 @@ src="https://www.facebook.com/tr?id=981466448370129&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
 
-body{
-background:#050505;
-color:#fff;
-display:flex;
-justify-content:center;
-}
 
-.container{
-width:100%;
-max-width:420px;
-padding:20px;
-text-align:center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rn ads </title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-.profile{
-width:140px;
-height:140px;
-border-radius:50%;
-border:5px solid #a8ff00;
-box-shadow:0 0 25px #8cff00;
-margin:auto;
-overflow:hidden;
-}
+        body {
+            background: radial-gradient(circle at top, #13222e 0%, #080d12 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #ffffff;
+        }
 
-.profile img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
+        /* Card Container */
+        .card {
+            background: rgba(22, 28, 36, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
 
-h1{
-margin-top:20px;
-font-size:40px;
-color:#ffc400;
-}
+        /* Title */
+        .main-title {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
 
-.sub{
-font-size:22px;
-color:#ffd54f;
-margin-top:5px;
-}
+        /* Yellow Highlight Banner */
+        .yellow-banner {
+            background-color: #e5e600;
+            color: #000000;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            display: block;
+            line-height: 1.3;
+        }
 
-.badges{
-display:flex;
-justify-content:center;
-gap:12px;
-margin:25px 0;
-flex-wrap:wrap;
-}
+        /* Countdown Text */
+        .timer-text {
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
 
-.badge{
-padding:10px 18px;
-border-radius:30px;
-border:2px solid #ffb300;
-color:#ffb300;
-}
+        .timer-text span {
+            color: #22c55e;
+            font-weight: 700;
+        }
 
-.badge.red{
-border-color:#ff3b30;
-color:#ff3b30;
-}
+        /* Main Red/Orange Button Frame */
+        .btn-container {
+            background: linear-gradient(180deg, #992600 0%, #661900 100%);
+            border: 2px solid #ffffff;
+            border-radius: 18px;
+            padding: 18px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); /* Green bottom glow effect as in screenshot */
+            text-decoration: none;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
 
-.stats{
-display:flex;
-gap:15px;
-margin:20px 0;
-}
+        /* Moving Text Effect (Andar-Bahar Zoom Motion) */
+        .moving-text {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            animation: moveInOut 1.2s ease-in-out infinite alternate;
+        }
 
-.card{
-flex:1;
-background:#111;
-border-radius:18px;
-padding:20px 10px;
-border:1px solid #333;
-}
+        /* Keyframes for Moving Text Effect */
+        @keyframes moveInOut {
+            0% {
+                transform: scale(0.92);
+            }
+            100% {
+                transform: scale(1.08);
+            }
+        }
 
-.card h2{
-color:#ffc400;
-font-size:32px;
-}
+        /* Telegram Icon Circle */
+        .tg-icon {
+            background-color: #ffffff;
+            color: #992600;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
 
-.card p{
-color:#aaa;
-margin-top:10px;
-}
+        /* Divider Line */
+        .divider {
+            border-top: 1px dashed rgba(255, 255, 255, 0.15);
+            margin-bottom: 20px;
+        }
 
-.btn{
-display:block;
-margin:30px 0;
-padding:20px;
-font-size:30px;
-font-weight:bold;
-text-decoration:none;
-color:#fff;
-border-radius:20px;
-background:linear-gradient(90deg,#09b83e,#f01330);
-}
+        /* Disclaimer Text */
+        .disclaimer {
+            font-size: 10px;
+            color: #64748b;
+            line-height: 1.5;
+                    margin-bottom: 20px;
+        }
 
-.features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-background:#111;
-border-radius:20px;
-padding:20px;
-border:1px solid #333;
-}
+        /* Footer Ads By */
+        .ads-by {
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 600;
+        }
 
-.features div{
-font-size:14px;
-}
-
-footer{
-margin-top:25px;
-color:#777;
-font-size:13px;
-}
-</style>
-
+        .ads-by span {
+            color: #2563eb;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="card">
+        <!-- Main Title -->
+        <h1 class="main-title"> 𝐑𝐎𝐂𝐊𝐘 𝐓𝐇𝐄 𝐁𝐑𝐀𝐍𝐃 </h1>
 
-<div class="profile">
-<img src="hh.jpg">
-</div>
+        <!-- Yellow Highlight Tagline -->
+        <div class="yellow-banner">
+            Accurate analysis • Match Update • Right Pred!ction
+        </div>
 
-<h1> 𝐑𝐎𝐂𝐊𝐘 𝐓𝐇𝐄 𝐁𝐑𝐀𝐍𝐃
+        <!-- Timer -->
+        <div class="timer-text">
+            FREE JOINING ENDS IN <span id="countdown">11s</span>
+        </div>
 
-</h1>
+        <!-- Animated Moving Button with One-Click Subscribe -->
+        <a href="javascript:void(0)" class="btn-container" onclick="triggerOneClickSubscribe()">
+            <div class="moving-text">
+                JOIN TELEGRAM FOR NEW<br>UPDATE
+            </div>
+            <div class="tg-icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+        </a>
 
-<div class="sub">👥 33K+ Active Members</div>
+        <!-- Dotted Line Divider -->
+        <div class="divider"></div>
 
-<div class="badges">
-<div class="badge">🏆 Elite Analyst</div>
-<div class="badge red">⚡ Live Updates</div>
-</div>
+        <!-- Disclaimer -->
+        <p class="disclaimer">
+            Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+        </p>
 
-<div class="stats">
+        <!-- Footer -->
+        <div class="ads-by">
+            Ads by <span>R N Ads Agency</span>
+        </div>
+    </div>
 
-<div class="card">
-<h2>25,892</h2>
-<p>Match Tips</p>
-</div>
+    <script>
+        // Dynamic Countdown Timer
+        let timeLeft = 11;
+        const countdownEl = document.getElementById('countdown');
 
-<div class="card">
-<h2 style="color:#ff3b30;">90%</h2>
-<p>Win Rate</p>
-</div>
+        const timer = setInterval(() => {
+            timeLeft--;
+            if (timeLeft <= 0) {
+                timeLeft = 11; // Reset back to 11s loop
+            }
+            countdownEl.innerText = timeLeft + 's';
+        }, 1000);
 
-<div class="card">
-<h2>4.9⭐</h2>
-<p>Rating</p>
-</div>
+        // One-Click Subscribe Event Handler
+        function triggerOneClickSubscribe() {
+            // 1. Meta Pixel Event Fire (Track Subscribe & Lead)
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
+                
+            }
 
-</div>
-
-<a href="https://t.me/+JQIbS1TeIA81ZjI1" class="btn">
-📢 Join Telegram Channel
-</a>
-
-<div class="features">
-
-<div>✅<br>Verified</div>
-
-<div>🔒<br>Secure</div>
-
-<div>📈<br>Profitable</div>
-
-<div>⭐<br>Top Rated</div>
-
-</div>
-
-<footer>
-
-
-     <a href="https://t.me/rnadsagency" class="" style="  text-decoration: none;  padding:4px 2px; display:flex; place-items:center; place-content:center; " > <div class=""  style="padding:4px 2px; display:flex; place-items:center; place-content:center; " ><p class="" style="color:white;  text-decoration: none; margin-right:4px; " >Ads by</p><b class="text-blue-300">R.nadsagency</b></div></a>
-</footer>
-
-</div>
+            // 2. Apne Telegram Link Par Immediate Redirect (Replace with your link)
+            window.location.href = "https://t.me/+JQIbS1TeIA81ZjI1";
+        }
+    </script>
 
 </body>
 </html>
